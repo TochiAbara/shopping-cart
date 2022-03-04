@@ -14,7 +14,7 @@ const Item = ({item, addToBasket}: Props) => {
       <img src={item.image} alt={item.name} />
       <div>
         <h3>{item.name}</h3>
-        <h3>Price: {item.price}p</h3>
+        <h3>Price: £{item.price.toFixed(2)}p</h3>
       </div>
       <Button onClick={() => addToBasket(item)}> Add to basket</Button>
     </Wrapper>

@@ -7,4 +7,7 @@ export const Wrapper = styled.div`
 
 export const StyledButton = styled(IconButton)`
 color: white;
+display: flex;
+justify-content: end;
+left: 0;
 `;

@@ -8,14 +8,14 @@ export const Wrapper = styled.div`
   padding-bottom: 20px;
   div {
     flex: 1;
+    
   }
-  .information,
-  .buttons {
-    display: flex;
-    justify-content: space-between;
+  .btn {
+    flex-direction: row;
   }
   img {
     max-width: 80px;
-    margin-left: 40px;
+   padding: 10px;
+   text-align: center;
   }
 `;

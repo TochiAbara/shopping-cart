@@ -16,12 +16,13 @@ const BasketItem = ({ item, addToBasket, removeFromBasket }: Props) => {
 			<div>
 				<h3>{item.name}</h3>
 				<div className="item-information">
-					<p>Price: {item.price}p</p>
+					<p>Price: £{item.price.toFixed(2)}p</p>
 					<p>Total: £{(item.amount * item.price).toFixed(2)}</p>
 				</div>
-				<div className="btn">
+        <img className="image" src={item.image} alt={item.name} />
+				<div>
 					<Button
-						size="medium"
+						size="small"
 						variant="outlined"
 						color="primary"
 						onClick={() => removeFromBasket(item.id)}
@@ -30,7 +31,7 @@ const BasketItem = ({ item, addToBasket, removeFromBasket }: Props) => {
 					</Button>
           <p>{item.amount}</p>
           <Button
-						size="medium"
+						size="small"
 						variant="outlined"
 						color="primary"
 						onClick={() => addToBasket(item)}
@@ -39,7 +40,6 @@ const BasketItem = ({ item, addToBasket, removeFromBasket }: Props) => {
 					</Button>
 				</div>
 			</div>
-      <img className="image" src={item.image} alt={item.name} />
 		</Wrapper>
 	);
 };

@@ -11,7 +11,8 @@ type Props = {
 
 const Basket = ({ basketItems, addToBasket, removeFromBasket }: Props) => {
 	const getTotal = (items: ItemType[]) =>
-		items.reduce((acc: number, item) => acc + item.amount * item.price, 0);
+		items.reduce((ack: number, item) => ack + item.amount * item.price / 2 , 0);
+
 	return (
 		<Wrapper>
 			<h2>BASKET</h2>

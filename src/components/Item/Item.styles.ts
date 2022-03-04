@@ -1,24 +1,27 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
+margin-top: 50px;
   display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   width: 100%;
-  border: 1px solid lightblue;
-  border-radius: 20px;
+  border: 10px solid pink;
+  border-radius: 50px;
   height: 100%;
   button {
     border-radius: 0 0 20px 20px;
   }
+
   img {
-    max-height: 250px;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
+width: 100px;
+margin: 10px;
+
   }
+  text-align: center;
   div {
     font-family: Arial, Helvetica, sans-serif;
     padding: 1rem;
-    height: 100%;
   }
 `;

@@ -1,12 +1,7 @@
-export type CartItemType = {
-	id: number
-	img: string;
-	price: number;
-	name: string;
+export type ItemType = {
+  id: number;
+  image: string;
+  name: string;
+  price: number;
   amount: number;
-};
-
-export type Props = {
-  item: CartItemType;
-  handleAddToCart: (clickedItem: CartItemType) => void;
-};
+}
